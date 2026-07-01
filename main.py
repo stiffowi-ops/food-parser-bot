@@ -75,7 +75,8 @@ async def handle_url(message: Message):
         if now - user_last_request_time[user_id] < COOLDOWN:
             await message.answer(
                 "Не спеши, а то успеешь.\n"
-                "Звёзды любят настойчивых, но тоже устают 🌙"
+                "Звёзды любят настойчивых, но тоже устают 🌙\n
+                Приходи через 24 часа"
             )
             return
 
